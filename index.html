@@ -1,17 +1,23 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
 <body>
-
-<h2>HTML forms</h2>
-	<form action="teste.html">
-    	<label for="fname">Primeiro nome:</label><br>
-        <input type="text" id="fname" name="fname" value="Lucas"><br>
-        <label for="lname">Sobrenome:</label><br>
-        <input type="text" id="lname "name="lname" value="Emanuel Rocha"><br>
-        <input type="submit" value="confirm">
+    <h1>Registro</h1>
+    <form action="envia-registro.php" method="post">
+        <label for="usuario">Usuário:</label>
+        <input type="text" id="usuario" name="usuario" required>
+        
+        <label for="senha">Senha:</label>
+        <input type="password" id="senha" name="senha" required>
+        
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        
+        <button type="submit">Registrar</button>
     </form>
-    
-<p>If you click the "Submit" button, the form-data will be sent to a page called "/action_page.php".</p>
-
 </body>
 </html>
